@@ -10,7 +10,7 @@ def create_app():
 
     @app.errorhandler(500)
     def not_found(error):
-        return render_template('500.html', error=error)
+        return render_template('portfolio/500.html', error=error)
 
     from . import portfolio
     from waitress import serve
